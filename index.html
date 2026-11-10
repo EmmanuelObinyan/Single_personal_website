@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f5ef" />
+    <meta
+      name="description"
+      content="Emmanuel Obinyan Onosetale is a software engineering graduate and full-stack developer based in Lagos, Nigeria."
+    />
+    <title>Emmanuel Obinyan Onosetale | Software Engineer</title>
+    <link rel="stylesheet" href="global.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <nav class="site-nav" aria-label="Main navigation">
+      <div class="nav-inner page-width">
+        <a
+          class="wordmark"
+          href="#top"
+          aria-label="Emmanuel Onosetale, back to top"
+          >EO<span>.</span></a
+        >
+        <ul class="nav-list">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="cv-button" id="cv-button" type="button">
+          Download CV <span aria-hidden="true">↗</span>
+        </button>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero page-width" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow availability">
+            <span class="status-dot"></span>Lagos, Nigeria
+            <span class="slash">/</span> Open to opportunities
+          </p>
+          <h1 id="hero-title">
+            Building useful things with <span>thoughtful code.</span>
+          </h1>
+          <p class="hero-intro">
+            I'm Emmanuel Obinyan Onosetale, a software engineering graduate and
+            full-stack developer who enjoys turning real problems into clear,
+            dependable digital experiences.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#work"
+              >Explore my work <span aria-hidden="true">↘</span></a
+            >
+            <a class="button button-light" href="#contact"
+              >Let's talk <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="hero-stats" aria-label="Education result">
+            <div>
+              <strong>First Class</strong><span>Software Engineering</span>
+            </div>
+            <div>
+              <strong>4.51 / 5.00</strong><span>Graduated July 2026</span>
+            </div>
+          </div>
+          <a class="scroll-cue" href="#work"><span></span>Scroll to explore</a>
+        </div>
+
+        <div class="hero-project">
+          <div class="project-meta">
+            <span>Selected project / 01</span><span>2026</span>
+          </div>
+          <div
+            class="code-window"
+            aria-label="Preview of a community services project"
+          >
+            <div class="window-bar">
+              <span class="window-dots"><i></i><i></i><i></i></span
+              ><span>community-connect.tsx</span
+              ><span aria-hidden="true">↗</span>
+            </div>
+            <div class="code-lines" aria-hidden="true">
+              <p>
+                <span>01</span><code>const <b>community</b> = {'{}'}</code>
+              </p>
+              <p>
+                <span>02</span
+                ><code><b>purpose</b> <em>"Make voices heard"</em></code>
+              </p>
+              <p>
+                <span>03</span
+                ><code><b>platform</b> <em>"Community Connect"</em></code>
+              </p>
+              <p>
+                <span>04</span><code><b>impact</b> <strong>true</strong></code>
+              </p>
+              <p><span>05</span><code>{'}'}</code></p>
+            </div>
+            <div class="window-footer">
+              <span>◉ Deployed</span><span>React · Firebase · Express</span>
+            </div>
+          </div>
+          <div class="hero-project-caption">
+            <span>01 — Community Services Feedback Portal</span
+            ><a href="https://github.com/EmmanuelObinyan/community-service-based-feedback-portal"
+              >View project <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="work-section page-width section-space"
+        id="work"
+        aria-labelledby="work-title"
+      >
+        <div class="section-heading work-heading">
+          <div>
+            <p class="eyebrow">01 / Selected work</p>
+            <h2 id="work-title">
+              Projects with purpose<span class="accent">.</span>
+            </h2>
+          </div>
+          <p>
+            A selection of products, experiments, and open-source work built
+            with teams and communities.
+          </p>
+        </div>
+        <div class="project-toolbar">
+          <span class="eyebrow">Filter</span>
+          <div class="project-tabs" role="tablist" aria-label="Filter projects">
+            <button
+              class="project-tab is-active"
+              id="tab-all"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              aria-controls="project-list"
+              tabindex="0"
+              data-filter="all"
+            >
+              All work <span>04</span>
+            </button>
+            <button
+              class="project-tab"
+              id="tab-frontend"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="project-list"
+              tabindex="-1"
+              data-filter="frontend"
+            >
+              Frontend
+            </button>
+            <button
+              class="project-tab"
+              id="tab-fullstack"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="project-list"
+              tabindex="-1"
+              data-filter="full-stack"
+            >
+              Full-stack
+            </button>
+          </div>
+          <p class="filter-status" id="filter-status" aria-live="polite"></p>
+        </div>
+        <div
+          class="project-list"
+          id="project-list"
+          role="tabpanel"
+          aria-labelledby="tab-all"
+        >
+          <article
+            class="project-row"
+            id="project-community"
+            data-category="full-stack"
+          >
+            <span class="project-number">01</span>
+            <div class="project-details">
+              <h3>Community Services Feedback Portal</h3>
+              <p>
+                A community-first portal for reporting local environmental
+                issues. Co-developed as a final-year thesis project, from
+                requirements specification through deployment.
+              </p>
+              <ul class="tag-list" aria-label="Technologies">
+                <li>React.js</li>
+                <li>Express.js</li>
+                <li>Firebase</li>
+                <li>Netlify / Render</li>
+              </ul>
+            </div>
+            <a
+              class="project-open"
+              href="#contact"
+              aria-label="Ask about Community Services Feedback Portal"
+              >↗</a
+            ><span class="project-type">Thesis project</span>
+          </article>
+          <article class="project-row" data-category="full-stack">
+            <span class="project-number">02</span>
+            <div class="project-details">
+              <h3>School Result Checking System</h3>
+              <p>
+                A collaborative academic results platform for students and
+                parents, with secure record lookup and email notifications.
+              </p>
+              <ul class="tag-list" aria-label="Technologies">
+                <li>Next.js</li>
+                <li>SQLite</li>
+                <li>Node.js</li>
+                <li>Tailwind CSS</li>
+              </ul>
+            </div>
+            <a
+              class="project-open"
+              href="#contact"
+              aria-label="Ask about School Result Checking System"
+              >↗</a
+            ><span class="project-type">Web application</span>
+          </article>
+          <article class="project-row" data-category="full-stack">
+            <span class="project-number">03</span>
+            <div class="project-details">
+              <h3>Hexashop E-commerce</h3>
+              <p>
+                A clothing and accessories store built during my internship,
+                with Flutterwave and Monnify sandbox payment integrations.
+              </p>
+              <ul class="tag-list" aria-label="Technologies">
+                <li>React.js</li>
+                <li>Firebase</li>
+                <li>Flutterwave</li>
+                <li>Monnify</li>
+              </ul>
+            </div>
+            <a
+              class="project-open"
+              href="#contact"
+              aria-label="Ask about Hexashop E-commerce"
+              >↗</a
+            ><span class="project-type">Internship</span>
+          </article>
+          <article class="project-row" data-category="frontend">
+            <span class="project-number">04</span>
+            <div class="project-details">
+              <h3>FutureTech — Open-Source Blog</h3>
+              <p>
+                A developer-friendly blogging project. Contributed multiple pull
+                requests and documented how new contributors can get involved.
+              </p>
+              <ul class="tag-list" aria-label="Technologies">
+                <li>React.js</li>
+                <li>Firebase</li>
+                <li>Open source</li>
+                <li>GitHub</li>
+              </ul>
+            </div>
+            <a
+              class="project-open"
+              href="https://github.com/FUTURETECH"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Visit GitHub for FutureTech"
+              >↗</a
+            ><span class="project-type">Open source</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="about-section" id="about" aria-labelledby="about-title">
+        <div class="about-grid page-width section-space">
+          <div class="about-heading">
+            <p class="eyebrow">02 / A little about me</p>
+            <h2 id="about-title">
+              Curious by nature.<br /><span>Collaborative by choice.</span>
+            </h2>
+            <div
+              class="university-mark"
+              aria-label="Mountain Top University, class of 2026"
+            >
+              <span>MTU</span><small>2026</small>
+            </div>
+          </div>
+          <div class="about-copy">
+            <p class="about-lead">
+              I’m a First Class Software Engineering graduate from Mountain Top
+              University, with hands-on experience shipping full-stack web
+              applications.
+            </p>
+            <p>
+              From writing software requirements to coordinating milestones and
+              contributing code, I care about the details that help a team
+              deliver thoughtfully. I’ve worked with professional developers,
+              collaborated on open-source software, and helped lead student
+              project teams.
+            </p>
+            <p>
+              Outside of software, I served as Assistant Music Director at
+              Mountain Top University-Chapel, organising workshops and
+              programmes. I’m now looking for a graduate trainee or junior
+              software engineering opportunity.
+            </p>
+            <div class="toolkit">
+              <p class="eyebrow">Tools I work with</p>
+              <div class="skill-group">
+                <span>Frontend</span>
+                <p>
+                  React.js · Next.js · TypeScript · JavaScript · Tailwind CSS
+                </p>
+              </div>
+              <div class="skill-group">
+                <span>Backend &amp; data</span>
+                <p>
+                  Node.js · Express.js · MongoDB · Mongoose · SQLite · Firebase
+                </p>
+              </div>
+              <div class="skill-group">
+                <span>Tools &amp; practice</span>
+                <p>
+                  Git · GitHub · Netlify · Render · Requirements · Team
+                  coordination
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="experience-section page-width section-space"
+        id="experience"
+        aria-labelledby="experience-title"
+      >
+        <div class="section-heading experience-heading">
+          <div>
+            <p class="eyebrow">03 / The journey so far</p>
+            <h2 id="experience-title">
+              Experience &amp; education<span class="accent">.</span>
+            </h2>
+          </div>
+          <a class="text-link" href="#contact"
+            >Full details in my CV <span aria-hidden="true">↓</span></a
+          >
+        </div>
+        <div class="timeline">
+          <article class="timeline-row">
+            <time>Mar — Sep 2025</time>
+            <div>
+              <h3>Web Development Intern <span>— HIIT Company PLC</span></h3>
+              <p>
+                Developed and deployed Hexashop, supported real-world projects,
+                and helped coordinate tasks and milestones with the team.
+              </p>
+            </div>
+            <span class="timeline-place">Lagos, Nigeria</span>
+          </article>
+          <article class="timeline-row">
+            <time>Jul 2026</time>
+            <div>
+              <h3>
+                B.Sc. Software Engineering
+                <span>— Mountain Top University</span>
+              </h3>
+              <p>
+                First Class Honours · GPA 4.51 / 5.00 · D.K. Ojukwu Scholarship
+                Award Programme, 2023–2026.
+              </p>
+            </div>
+            <span class="timeline-place">Ogun State</span>
+          </article>
+          <article class="timeline-row">
+            <time>Mar — Jul 2026</time>
+            <div>
+              <h3>
+                Co-Team Leader
+                <span>— Web Development &amp; Project Management Group</span>
+              </h3>
+              <p>
+                Coordinated team development activities, set milestones, and
+                organised student workshops across faculties.
+              </p>
+            </div>
+            <span class="timeline-place">Mountain Top University</span>
+          </article>
+          <article class="timeline-row">
+            <time>Jan 2025 — Jun 2026</time>
+            <div>
+              <h3>
+                Assistant Music Director
+                <span>— Mountain Top University-Chapel</span>
+              </h3>
+              <p>
+                Coordinated music activities, worship workshops, and programmes
+                at university events.
+              </p>
+            </div>
+            <span class="timeline-place">Ogun State</span>
+          </article>
+          <article class="timeline-row">
+            <time>Feb — Jul 2025</time>
+            <div>
+              <h3>
+                Assistant Librarian
+                <span>— Nigerian Association of Computing Students</span>
+              </h3>
+              <p>
+                Supported the student association while continuing professional
+                development through mentorship programmes.
+              </p>
+            </div>
+            <span class="timeline-place">Mountain Top University</span>
+          </article>
+        </div>
+        <div class="certifications">
+          <span class="eyebrow">Certifications</span>
+          <p>
+            Web Development Internship Completion — HIIT Company PLC, 2025
+            <span>·</span> Pense Skills Certificate for Employability — POISE
+            Nigeria, 2026
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="contact-section"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="contact-grid page-width section-space">
+          <h2 id="contact-title">
+            Have a good problem<br />to solve? <span>Let’s talk.</span>
+          </h2>
+          <div class="contact-copy">
+            <p>
+              I’m open to graduate trainee and junior software engineering
+              roles, collaborations, and thoughtful conversations.
+            </p>
+            <a class="email-link" href="mailto:emmanuelobinyan936@gmail.com"
+              >emmanuelobinyan936@gmail.com <span aria-hidden="true">↗</span></a
+            >
+            <div class="social-links">
+              <a
+                href="https:/linkedin.com/in/emmanuel-obinyan-2754b6382/"
+                target="_blank"
+                rel="noreferrer"
+                >LinkedIn <span aria-hidden="true">↗</span></a
+              ><a href="https:/github.com/EmmanuelObinyan/  " target="_blank" rel="noreferrer"
+                >GitHub <span aria-hidden="true">↗</span></a
+              ><span>Lagos, Nigeria</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner page-width">
+        <a class="wordmark footer-mark" href="#top">EO<span>.</span></a>
+        <p>Designed &amp; built by Emmanuel Obinyan Onosetale</p>
+        <div>
+          <a href="#top">Back to top ↑</a><span class="footer-divider">|</span
+          ><a href="index.html" download="emmanuel-onosetale-portfolio.html"
+            >Download website source ↗</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
